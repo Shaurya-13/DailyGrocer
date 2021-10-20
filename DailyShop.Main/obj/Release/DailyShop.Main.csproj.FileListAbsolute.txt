@@ -1,0 +1,6 @@
+C:\Users\shaug\source\repos\TheDailyShop\DailyShop.Main\bin\Release\DailyShop.Main.dll
+C:\Users\shaug\source\repos\TheDailyShop\DailyShop.Main\bin\Release\DailyShop.Main.pdb
+C:\Users\shaug\source\repos\TheDailyShop\DailyShop.Main\obj\Release\DailyShop.Main.csprojAssemblyReference.cache
+C:\Users\shaug\source\repos\TheDailyShop\DailyShop.Main\obj\Release\DailyShop.Main.csproj.CoreCompileInputs.cache
+C:\Users\shaug\source\repos\TheDailyShop\DailyShop.Main\obj\Release\DailyShop.Main.dll
+C:\Users\shaug\source\repos\TheDailyShop\DailyShop.Main\obj\Release\DailyShop.Main.pdb

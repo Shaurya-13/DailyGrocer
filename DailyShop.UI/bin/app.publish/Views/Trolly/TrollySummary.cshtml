@@ -1,0 +1,5 @@
+﻿@model DailyShop.Main.ViewModels.TrollySumVM
+<ul class="nav navbar-nav navbar-right">
+    <li><a href="@Url.Action("Index", "Trolly")">@Model.TrollyCount products</a></li>
+    <li><a href="@Url.Action("Index", "Trolly")">@String.Format("{0:c}", Model.TrollyTotal)</a></li>
+</ul>

@@ -1,0 +1,45 @@
+﻿@model DailyShop.Main.ViewModels.ProdListVM
+@{
+    ViewBag.Title = "Home Page";
+}
+
+<div class="jumbotron" style="background-color:darkcyan;width: 1600px; height: 700px">
+    <img class="img-responsive" style="width: 1600px; height: 500px" src="~/Content/ProdImgUp/GrocerBG.jpg" />
+    <center><h1 style="color:aqua">The DailyGrocer</h1></center>
+</div>
+
+
+    <center><h2>FRESH PRODUCTS</h2></center>
+    <div class="col-md-2">
+        <h4>Categories include:</h4>
+        <div class="list-group">
+            @Html.ActionLink("ALL", "Index", null, new { @class = Request["Category"] == null ? "list-group-item active" : "list-group-item" })
+            @foreach (var cat in Model.ProductCategories)
+            {
+                @Html.ActionLink(cat.CategoryName, "Index", new { Category = cat.CategoryName }, new { @class = Request["Category"] == cat.CategoryName ? "list-group-item active" : "list-group-item" })
+            }
+        </div>
+    </div>
+    <div class="col-md-10">
+        @foreach (var item in Model.Products)
+        {
+            <div class="col-md-3" style="height:450px;border:solid thin whitesmoke">
+                <div class="col-md-12">   
+                    <img class="img" style="height:200px" src="~/Content/ProdImgUp/@item.Img" />
+                </div>
+                <div class="col-md-12">
+                    <h2><strong>@Html.ActionLink(item.Name, "Details", new { id = item.Id })</strong></h2>
+                </div>
+                <div class="col-md-12">
+                    <h4>@item.Desc</h4>
+                </div>
+                <div class="col-md-12">
+                    <h4>₹@item.Price</h4>
+                </div>
+                <div class="col-md-12">
+                    <a href="@Url.Action("AddToTrolly", "Trolly", new { Id=item.Id })" class="btn btn-default">Add to trolly</a>
+                </div>
+            </div>
+        }
+    </div>
+    <div class="col-md-12 clearfix" style="background-color:darkcyan" />

@@ -1,0 +1,24 @@
+﻿@{
+    ViewBag.Title = "Administrator";
+}
+<center>
+    <div>
+        <img class="img-responsive" style="width:1600px; height: 600px" src="~/Content/ProdImgUp/Admin.png" />
+        <center><h2>Administrator Page</h2></center>
+    </div>
+</center>
+
+
+<div class="col-md-6">
+    <h4>Product Management</h4>
+    <div class="list-group">
+        @Html.ActionLink("Product Categories", "Index", "ProdCategoryManaging", null, new { @class = "list-group-item" })
+        @Html.ActionLink("Product", "Index", "ProductManagement", null, new { @class = "list-group-item" })
+    </div>
+</div>
+<div class="col-md-6">
+    <h4>Order Management</h4>
+    <div class="list-group">
+        @Html.ActionLink("Orders", "Index", "OrderManagement", null, new { @class = "list-group-item" })
+    </div>
+</div>

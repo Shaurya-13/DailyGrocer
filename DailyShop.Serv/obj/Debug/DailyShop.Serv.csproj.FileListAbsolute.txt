@@ -1,0 +1,9 @@
+C:\Users\shaug\source\repos\TheDailyShop\DailyShop.Serv\bin\Debug\DailyShop.Serv.dll
+C:\Users\shaug\source\repos\TheDailyShop\DailyShop.Serv\bin\Debug\DailyShop.Serv.pdb
+C:\Users\shaug\source\repos\TheDailyShop\DailyShop.Serv\obj\Debug\DailyShop.Serv.csprojAssemblyReference.cache
+C:\Users\shaug\source\repos\TheDailyShop\DailyShop.Serv\obj\Debug\DailyShop.Serv.csproj.CoreCompileInputs.cache
+C:\Users\shaug\source\repos\TheDailyShop\DailyShop.Serv\obj\Debug\DailyShop.Serv.dll
+C:\Users\shaug\source\repos\TheDailyShop\DailyShop.Serv\obj\Debug\DailyShop.Serv.pdb
+C:\Users\shaug\source\repos\TheDailyShop\DailyShop.Serv\bin\Debug\DailyShop.Main.dll
+C:\Users\shaug\source\repos\TheDailyShop\DailyShop.Serv\bin\Debug\DailyShop.Main.pdb
+C:\Users\shaug\source\repos\TheDailyShop\DailyShop.Serv\obj\Debug\DailyShop.Serv.csproj.CopyComplete

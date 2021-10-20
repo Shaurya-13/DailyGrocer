@@ -1,0 +1,53 @@
+﻿@model IEnumerable<DailyShop.Main.ViewModels.TrollyItemVM>
+
+@{
+    ViewBag.Title = "Trolly";
+}
+
+<h2>Your Trolly</h2>
+
+
+<table class="table">
+    <tr>
+        <th></th>
+        <th>
+            @Html.DisplayNameFor(model => model.ProductName)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.ProdQuantity)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Price)
+        </th>
+        <th>
+            Line Total
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+<tr>
+    <td><img style="height:50px"class="img" src="~/Content/ProdImgUp/@item.Img"/></td>
+    <td>
+        @Html.DisplayFor(modelItem => item.ProductName)
+    </td>
+    <td>
+        @Html.DisplayFor(modelItem => item.ProdQuantity)
+    </td>
+    <td>
+        @String.Format("{0:c}",item.Price)
+    </td>
+    <td>
+        @String.Format("{0:c}", item.Price*item.ProdQuantity)
+    </td>
+    <td>
+        <a href="@Url.Action("RemoveFromTrolly", "Trolly", new { Id=item.Id })" class="btn btn-danger">Delete Product</a>
+    </td>
+</tr>
+}
+<tr>
+    <td colspan="4" style="text-align:right"><strong>Your Total</strong></td>
+    <td>@String.Format("{0:c}", (from p in Model select p.Price*p.ProdQuantity).Sum())</td>
+    <td><a href="@Url.Action("Checkout", "Trolly")">Checkout</a></td>
+</tr>
+</table>
